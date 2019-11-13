@@ -1,0 +1,37 @@
+\documentclass{HGBAbgabe}
+\usepackage[colorlinks]{hyperref}
+\usepackage{tikz}
+
+\begin{document}
+	
+	\HGBAngabePdf{Angabe.pdf}{
+		\begin{tikzpicture}[remember picture, overlay,x=1cm,y=-1cm]
+			\node[draw=none,text width=6. cm,align=left] at (6.2,3.05) {Paul Götzinger};
+			\node[draw=none,text width=6. cm,align=left] at (6.2,3.65) {1910567017};
+			\node[draw=none,text width=1.8 cm,align=center] at (4.2,4.25) {2};
+			\node[draw=none,text width=1.8 cm,align=center] at (4.2,4.85) {6h};
+		\end{tikzpicture}
+    }
+    
+	\HGBToc
+
+	\HGBSourceToc{}
+	\pagebreak
+	
+\section{Verbatim}
+
+\HGBVerbatim{example.h} 
+
+\section{Module}
+
+\HGBCppModule{example}
+
+\section{Source}
+
+\HGBCppSource{example.cpp}
+
+\section{Image}
+
+\HGBImage{0.4}{Angabe.pdf}
+
+\end{document}

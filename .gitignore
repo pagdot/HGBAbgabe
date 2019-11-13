@@ -1,0 +1,11 @@
+*.fdb_latexmk
+*.fls
+*.log
+*.lol
+*.out
+*.pdf
+*.toc
+*.cls
+*.synctex.gz
+
+!Angabe.pdf
