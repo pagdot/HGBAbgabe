@@ -5,7 +5,7 @@
 *.out
 *.pdf
 *.toc
-*.cls
+*.aux
 *.synctex.gz
 
 !Angabe.pdf

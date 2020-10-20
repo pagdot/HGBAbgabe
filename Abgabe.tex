@@ -4,16 +4,16 @@
 
 \begin{document}
 	
-	\HGBAngabePdf{Angabe.pdf}{
+	\HGBPdf{Angabe.pdf}{
 		\begin{tikzpicture}[remember picture, overlay,x=1cm,y=-1cm]
-			\node[draw=none,text width=6. cm,align=left] at (6.2,3.05) {Paul Götzinger};
-			\node[draw=none,text width=6. cm,align=left] at (6.2,3.65) {1910567017};
+			\node[draw=none,text width=6. cm,align=left] at (6.2,3.05) {Max Mustermann};
+			\node[draw=none,text width=6. cm,align=left] at (6.2,3.65) {123456789};
 			\node[draw=none,text width=1.8 cm,align=center] at (4.2,4.25) {2};
 			\node[draw=none,text width=1.8 cm,align=center] at (4.2,4.85) {6h};
 		\end{tikzpicture}
     }
     
-	\HGBToc
+	\tableofcontents
 
 	\HGBSourceToc{}
 	\pagebreak
@@ -32,6 +32,13 @@
 
 \section{Image}
 
-\HGBImage{0.4}{Angabe.pdf}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.4\linewidth]{Angabe.pdf}
+	\caption{The logo in use}
+	\label{fig:logo}
+\end{figure}
+
+Take a look at the nice exercise in \autoref{fig:logo}!
 
 \end{document}
